@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_item_cetogry"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/preview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_item_category"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@+id/img_item_cetogry"
+        app:layout_constraintBottom_toBottomOf="@+id/img_item_cetogry"
+        app:layout_constraintStart_toEndOf="@+id/img_item_cetogry"
+        android:text="Puma"
+        android:textSize="22sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
